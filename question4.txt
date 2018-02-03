@@ -1,0 +1,4 @@
+a} SELECT fname FROM emp GROUP BY fname HAVING count(*) > 1
+b} SELECT * FROM emp JOIN emp_phone on emp.id = emp_phone.id
+c) SELECT * FROM emp LEFT JOIN emp_phone on emp.id = emp_phone.id
+d) SELECT * FROM emp LEFT JOIN emp_phone on emp.id = emp_phone.id WHERE emp_phone.phone is null

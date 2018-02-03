@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bowling</title>
+    
+    <!-- link to the CSS stylesheet that supports this page -->
+    <link rel="stylesheet" type="text/css" href="bowling_styles.css">
+    
+    <!-- incorporate the script that defines the classes for scoring a bowling game -->
+    <script src="bowling_classes_core.js"></script> 
+
+    <!-- and incorporate the script that leverages the core classes in a web user interface -->
+    <script src="bowling_classes_webUI.js"></script> 
+    
+  </head>
+
+  <body>
+    <h2>Bowling</h2>
+
+    <!-- our main DIV container for all page content -->
+    <div id="main">
+
+      <!-- the left column of the page -->
+      <div id="left">
+        
+        <!-- this is where the output of the bowling scorecard will go -->
+        <div id="scorecard">
+        </div>
+
+        <!-- container for our UI action buttons -->
+        <div id="actions">
+            Add a value for the next roll:  <input id="rollValue"> <button id="addRoll">Add roll</button>
+            <br /><br />
+            <button id="randomRoll">Make a random roll</button>
+            <button id="randomFive">Make five random rolls</button>
+            <button id="completeGame">Complete the game with random rolls</button>
+            <button id="newGame">New Game</button>
+            <br />
+        </div>
+
+        <!-- container for settings that will affect our actions -->
+        <div id = "settings">
+            Level of ability for random roller:  
+            <br />
+            <input type="radio" id="ability1" name="ability" value="0" checked="checked"><label for="ability1">Beginner</label>
+            <input type="radio" id="ability2" name="ability" value=".15"><label for="ability2">Intermediate</label>
+            <input type="radio" id="ability3" name="ability" value=".25"><label for="ability3">Amateur</label>
+            <input type="radio" id="ability4" name="ability" value=".50"><label for="ability4">League Player</label>
+            <input type="radio" id="ability5" name="ability" value=".75"><label for="ability5">Pro</label>
+            <input type="radio" id="ability6" name="ability" value=".95"><label for="ability6">Crazy Good</label>            
+        </div>
+        
+        <!-- a container for displaying any messages or errors that occur through the processing of a game -->
+        <div id="message">        
+        </div>
+        
+      </div>
+
+
+      <!-- the right column of the page -->
+      <div id="right">
+        
+        <!-- container for displaying our list of rolls for this game -->
+        <div id="rolls">
+            <div id="rollsLabel">Rolls</div>
+            <div id="rollsContent"></div>
+        </div>                
+        
+      </div>
+
+
+    </div>
+    
+    <!-- after allowing our UI div element nodes to load, incorporate the scripting
+         that instantiates our Game class, and wires our page elements to the Game object
+         for user interaction and display. -->
+    <script src="bowling_pageScript.js"></script> 
+
+  </body>
+</html>

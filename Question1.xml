@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE xml>
+<?xml-stylesheet type='text/xsl' href='question1.xsl'?>
+
+<customer>
+	<fname>Bob</fname>
+	<lname>Smith</lname>
+	<phone>702-555-1212</phone>
+	<dob_y>1950</dob_y>
+	<dob_m>05</dob_m>
+	<dob_d>10</dob_d>
+	<email>bob@smith.com</email>
+	<active>TRUE</active>  <!--values: TRUE/FALSE -->
+	<type>WEEKLY</type>
+</customer>

@@ -1,0 +1,11 @@
+The following query will work(where 1111 is the last four you are searching for):
+SELECT ssn FROM `emp` WHERE RIGHT(ssn,4)=1111; 
+
+
+
+
+I made ssn the primary key. However, mysql does not use the indexes in a query where a function is applied.
+Therefore, making a field with only the last 4 of ssn might really pay off on a large database.
+
+Indexing other fields in the database would not affect this particular query, but  would help with other queries involving more than one field.
+

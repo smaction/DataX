@@ -1,0 +1,73 @@
+
+/***************************************************
+  style some default fonts for the page
+ ***************************************************/
+body {font-family:Helvetica,Tahoma,sans-serif; font-size: 12pt;}
+h2   {font-size: 24pt; font-weight: bold; margin: 24px 24px 12px 12px;}
+
+
+/***************************************************
+  layout styling for our main content container and its children left and right columns
+ ***************************************************/
+#main {}
+#left {display: inline-block; vertical-align: top;}
+#right {display: inline-block; vertical-align: top;}
+
+
+/***************************************************
+  styling related to the output scorecard
+ ***************************************************/
+#scorecard {padding: 4px;}     
+
+.frame {padding: 0px; border: 1px solid #CCCCCC; display: inline-block; }
+.frameNumber {font-weight: bold; color: #CCCCCC; margin: 0px; padding: 4px 4px 4px 6px; background-color: #EFEFEF; border-bottom: 1px solid #CCCCCC;}
+
+/* for the second slot (the box) in a frame on normal frames, or all the slots for the last fame */
+.slotbox {padding: 0px; font-size: 90%; display: inline-block; width: 28px; height: 28px; 
+          text-align: center; line-height: 2; overflow: hidden;
+          border-left: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC;
+          border-right: 0px; border-top: 0px;  
+         }
+         
+/* for the first slot (the non-box) in a normal frame */         
+.slot {padding: 0px; font-size: 90%; display: inline-block; width: 28px; height: 28px; 
+       text-align: center; line-height: 2; overflow: hidden;
+          border-left: 1px solid #ffffff; border-bottom: 1px solid #ffffff;
+          border-right: 0px; border-top: 0px;  
+       }
+
+/* the main running score div */
+.score {padding: 6px 6px 3px 3px; font-size: 140%; border: 0px; text-align: right; 
+        vertical-align: bottom;
+        }
+
+/* additional styling for strikes and spares */
+.frame div span.strike {font-weight: bold; font-size: 110%; color: blue;}
+.frame div span.spare  {font-weight: bold; font-size: 110%; color: green;}
+.frame div.strike   {background-color: #DFFFFF;}
+.frame div.spare    {background-color: #DFFFFF;}
+
+
+/**************************************************
+  style the output container for game messages or errors
+ **************************************************/
+#message {margin-top: 14px; border-top: 1px solid #999999; padding-top: 12px;}
+#message span.error {color: red; font-weight: bold;}
+#message span.normal {color: #666666; font-weight: normal;}
+
+
+/**************************************************
+  style the output container for the list of game rolls
+ **************************************************/
+#rolls {border: 1px solid #CCCCCC; padding: 8px; background-color: #FAFAFA; margin-left: 40px; min-height: 100px; min-width: 70px;}
+#rollsLabel {font-size: 110%; font-weight: bold; font-color: #999999; margin-bottom: 12px;}
+#rollsContent {font-size: 90%; font-weight: normal; font-family: monospace;}
+
+
+/**************************************************
+  style the containers for our UI button actions and settings
+ **************************************************/
+#actions {margin-top: 24px; font-size: 86%;}
+#settings {margin-top: 14px; font-size: 86%;}
+#settings input[type="radio"] {margin-left: 12px;}
+
